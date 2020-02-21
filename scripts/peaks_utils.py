@@ -1,6 +1,4 @@
-import numpy as np
 import pandas as pd
-import re
 
 
 def clean_table(table_df):
