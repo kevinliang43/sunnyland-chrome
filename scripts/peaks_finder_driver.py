@@ -27,7 +27,6 @@ def main():
     mass_intensity_df = clean_table_df[columns]
 
     # Discover peaks
-    # result = find_peaks(mass_intensity_df, 0.1, 2, 0.001)
     result = find_peaks(mass_intensity_df, intensity_tolerance, mass_shift, mass_tolerance)
 
     # Write to output
