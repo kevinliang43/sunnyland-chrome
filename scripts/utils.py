@@ -14,7 +14,7 @@ def parse_inputs(argv):
     parser.add_argument("-m", "--mass_shift", help="Mass Shift to look for", required=True, type=float)
 
     parser.add_argument("-t", "--intensity_tolerance", help="Accepted tolerance for intensity to match",
-                        required=False, default=0.01, type=float)
+                        required=False, default=0.1, type=float)
     parser.add_argument("-v", "--mass_tolerance", help="Accepted tolerance for Mass shift to match",
                         required=False, default=0.001, type=float)
     parser.add_argument("-o", "--output_path", help="Destination filepath of the script output file.", required=False)
