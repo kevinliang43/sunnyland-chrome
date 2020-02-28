@@ -1,0 +1,12 @@
+# Python Specific
+__pycache__/
+
+# Default output directory
+output/
+
+# Testing Files
+test_files/
+
+# IDE Specific
+.idea/
+
