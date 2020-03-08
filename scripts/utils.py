@@ -39,3 +39,16 @@ def create_default_output_path():
     # Return the default output file path string
     current_time = time.strftime("%Y_%m_%d-%H%M%S")
     return "{}/peaks_{}.xlsx".format(output_dir, current_time)
+
+
+def list_directory_files(dir_path):
+    """
+    Gets all filepaths from a given string representing the target directory path.
+    :param dir_path: (str) target directory path
+    :return: Dictionary mapping file_name to its full file_path
+    """
+
+    # Get all file names
+    file_names = os.listdir(dir_path)
+    # Return dictionary mapping {file_name: full file_path}
+    return {file_name: os.path.join(dir_path, file_name) for file_name in file_names}
